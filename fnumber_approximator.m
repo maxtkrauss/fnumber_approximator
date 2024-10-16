@@ -37,7 +37,7 @@ intensityTable = table(fileNames', avgIntensities, 'VariableNames', {'FileName',
 
 sortedIntensityTable = sortrows(intensityTable, 'AverageIntensity', 'descend');
 
-calculate_f_number(sortedIntensityTable, 1.4)
+calculate_f_number(sortedIntensityTable, 1.4) % 1.4 is the lenses default fnumber
 
 function fNumbers = calculate_f_number(intensityTable, fNumberFullyOpen)
     idxFullOpen = strcmp(intensityTable.FileName, '0.0.tif');
