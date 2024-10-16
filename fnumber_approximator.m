@@ -1,8 +1,8 @@
 clear;
 clc;
 
-% Prompt user to select a folder containing TIFF images
-folder = uigetdir('', 'Select a folder containing TIFF images');
+% Prompt user to select a folder
+folder = uigetdir('', 'Select a folder containing TIF images');
 if folder == 0
    disp('User canceled folder selection');
    return;
